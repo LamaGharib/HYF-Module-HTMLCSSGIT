@@ -1,0 +1,32 @@
+creat hidden folder :
+
+using the command mkdir to creat the folder then attrib +h to hide it 
+
+example :
+
+mkdir hyf.html
+attrib +h hyf.html
+
+----
+
+creat nested directories:
+ 
+using mkdir -p \ 
+
+example :
+
+mkdir -p c/Users/myusername/these/folders/are/for/fun
+
+
+----
+
+append a message with no new line character:
+
+uising the command echo -e \n > (the file name )
+
+example:
+
+echo "first message \nsecound message" > hyf.html 
+
+
+
