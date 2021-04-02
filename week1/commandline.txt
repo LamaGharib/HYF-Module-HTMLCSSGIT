@@ -26,7 +26,7 @@ uising the command echo -e \n > (the file name )
 
 example:
 
-echo "first message \nsecound message" > hyf.html 
+echo -e "first message \n secound message" > hyf.txt
 
 
 
