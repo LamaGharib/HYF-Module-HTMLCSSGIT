@@ -1,2 +1,2 @@
 # lama
-https://lamagharib.github.io/lama/.
+https://lamagharib.github.io/lama/
