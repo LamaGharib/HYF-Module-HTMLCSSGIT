@@ -1,2 +1,2 @@
 # lama
-https://lamagharib.github.io/lama/week1
+https://lamagharib.github.io/HYF-Module-HTMLCSSGIT/week1
