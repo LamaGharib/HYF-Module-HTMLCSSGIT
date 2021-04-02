@@ -1,0 +1,120 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contener {
+  width: 80%;
+  height: 100%;
+  background-color: aquamarine;
+  margin: 20px auto;
+  border: 3px solid aquamarine;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.out {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  flex: 1;
+  border: 5px solid black;
+  margin: 2px;
+  background-color: rgb(41, 39, 39);
+  overflow: hidden;
+  cursor: pointer;
+}
+.in {
+  position: absolute;
+  width: 100%;
+  border: 3px solid transparent;
+  background-color: rgb(23, 24, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex: 1;
+  height: 100%;
+  clip-path: circle(1px at 0% 0%);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+.out:hover .in {
+  clip-path: circle(75%);
+  border-radius: 10px;
+  background-color: aquamarine;
+  color: black;
+}
+.out:hover h2 {
+  color: black;
+}
+.out:hover i {
+  color: black;
+}
+.info ul {
+  padding-right: 50px;
+}
+
+h2 {
+  color: aquamarine;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 10px;
+}
+#goals {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.exper-in ul {
+  text-align: left;
+  align-self: flex-start;
+}
+i {
+  font-size: 2rem;
+}
+.exper-in li {
+  white-space: pre-wrap;
+}
+footer {
+  color: aquamarine;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .contener {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .exper,
+  .personal,
+  .edu {
+    height: 350px;
+  }
+  .exper-in ul {
+    margin: 40px;
+    list-style-position: inside;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .edu p {
+    padding: 0;
+  }
+  .exper-in ul {
+    line-height: 1.3rem;
+  }
+}
