@@ -63,7 +63,7 @@ li:focus {
 li:hover p,
 li:focus p {
   margin-top: 0;
-  z-index: 7;
+  z-index: 11;
 }
 li:hover img,
 li:focus img {
