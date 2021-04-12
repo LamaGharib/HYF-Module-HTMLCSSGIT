@@ -55,7 +55,7 @@ p {
 li:hover,
 li:focus {
   transform: scale(1.1);
-  filter: drop-shadow(10px 10px 10px hsl(132, 88%, 50%));
+  box-shadow: 0 0 2rem hsl(132, 88%, 50%);
   border: 3px solid hsl(132, 88%, 50%);
   z-index: 20;
 }
@@ -163,10 +163,5 @@ section .grid-item:nth-child(2) p {
   li:hover img,
   li:focus img {
     transform: translateY(-80px) rotateY(360deg);
-  }
-
-  .grid-item:hover,
-  :focus {
-    border: 3px solid hsl(132, 88%, 50%);
   }
 }
