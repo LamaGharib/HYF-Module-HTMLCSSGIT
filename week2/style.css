@@ -150,6 +150,7 @@ section .grid-item:nth-child(2) p {
     min-height: 540px;
   }
   .grid-floats li:nth-child(4) {
+    clear: both;
   }
   .grid-flex .grid-item {
     width: 23.6%;
@@ -167,6 +168,9 @@ section .grid-item:nth-child(2) p {
 }
 @media only screen and (min-width: 1513px) {
   .grid-floats .grid-item {
+    min-height: 750px;
+  }
+  .grid-flex .grid-item {
     min-height: 750px;
   }
   .grid-floats .grid-item:nth-child(2),
