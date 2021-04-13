@@ -58,6 +58,7 @@ li:focus {
   box-shadow: 0 0 2rem hsl(132, 88%, 50%);
   border: 3px solid hsl(132, 88%, 50%);
   z-index: 20;
+  cursor: pointer;
 }
 
 li:hover p,
@@ -122,7 +123,7 @@ section .grid-item:nth-child(2) p {
   }
 }
 @media only screen and (min-width: 1025px) {
-  .grid-floats li {
+  .grid-floats .grid-item {
     width: 23.6%;
     min-height: 540px;
     float: left;
@@ -149,7 +150,6 @@ section .grid-item:nth-child(2) p {
     min-height: 540px;
   }
   .grid-floats li:nth-child(4) {
-    clear: both;
   }
   .grid-flex .grid-item {
     width: 23.6%;
@@ -163,5 +163,21 @@ section .grid-item:nth-child(2) p {
   li:hover img,
   li:focus img {
     transform: translateY(-80px) rotateY(360deg);
+  }
+}
+@media only screen and (min-width: 1513px) {
+  .grid-floats .grid-item {
+    min-height: 750px;
+  }
+  .grid-floats .grid-item:nth-child(2),
+  .grid-floats .grid-item:nth-child(3) {
+    min-height: 750px;
+  }
+  section .grid-item:first-child {
+    height: 750px;
+  }
+  li:hover p,
+  li:focus p {
+    padding-top: 500px;
   }
 }
