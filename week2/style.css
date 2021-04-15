@@ -28,7 +28,7 @@ img {
   width: 90%;
   padding-top: 20px;
   padding-left: 10px;
-  filter: drop-shadow(10px 10px 10px hsl(132, 88%, 50%));
+  filter: drop-shadow(10px 10px 10px hsl(22, 94%, 48%));
   transition: all 1s ease-in-out;
 }
 
@@ -42,7 +42,7 @@ p {
 .grid-floats li,
 .grid-flex li {
   width: 100%;
-  border: 3px hsl(132, 88%, 50%) solid;
+  border: 3px hsl(22, 94%, 48%) solid;
   box-shadow: 0 0 2rem black;
   margin: 3px;
   padding: 0;
@@ -55,29 +55,23 @@ p {
 li:hover,
 li:focus {
   transform: scale(1.1);
-  border: 3px solid hsl(22, 94%, 48%);
+  box-shadow: 0 0 2rem hsl(132, 88%, 50%);
+  border: 3px solid hsl(132, 88%, 50%);
   z-index: 20;
+  cursor: pointer;
 }
 
 li:hover p,
 li:focus p {
-  display: inline-block;
-  height: 100%;
   margin-top: 0;
-  z-index: 7;
+  z-index: 11;
 }
 li:hover img,
 li:focus img {
   position: absolute;
   z-index: 10;
   transform: translateY(50px) rotateY(360deg);
-  filter: drop-shadow(10px 10px 10px hsl(22, 94%, 48%));
-}
-li:hover h3,
-li:focus h3 {
-  background-color: hsl(22, 94%, 48%);
-  margin: 0;
-  padding: 10px;
+  filter: drop-shadow(10px 10px 10px hsl(132, 88%, 50%));
 }
 
 h2,
@@ -88,6 +82,7 @@ h1 {
 h2 {
   padding-top: 10px;
 }
+
 section .grid-item:nth-child(2) p {
   text-align: right;
 }
@@ -108,32 +103,27 @@ section .grid-item:nth-child(2) p {
     width: 47.5%;
     min-height: 400px;
   }
+  img {
+    margin-top: 50px;
+  }
 
   .grid-flex li {
     width: 31%;
     min-height: 400px;
   }
-  li:hover,
-  li:focus {
-    transform: scale(1.2);
-    z-index: 3;
-    border: 3px solid hsl(22, 94%, 48%);
-  }
+
   li:hover p,
   li:focus p {
-    background-color: transparent;
-    z-index: 15;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: rgb(235, 243, 237);
   }
   li:hover img,
   li:focus img {
-    transform: translateY(100px) rotateY(360deg);
+    transform: translateY(80px) rotateY(360deg);
   }
 }
 @media only screen and (min-width: 1025px) {
-  .grid-floats li {
-    border: 3px solid hsl(22, 94%, 48%);
+  .grid-floats .grid-item {
     width: 23.6%;
     min-height: 540px;
     float: left;
@@ -141,7 +131,6 @@ section .grid-item:nth-child(2) p {
   img {
     margin-top: 120px;
     margin-bottom: 120px;
-    filter: drop-shadow(10px 10px 10px hsl(22, 94%, 48%));
   }
 
   section .grid-item:first-child {
@@ -166,24 +155,33 @@ section .grid-item:nth-child(2) p {
   .grid-flex .grid-item {
     width: 23.6%;
     min-height: 540px;
-    border: 3px solid hsl(22, 94%, 48%);
   }
 
   li:hover p,
   li:focus p {
-    padding-top: 290px;
+    padding-top: 270px;
   }
   li:hover img,
   li:focus img {
-    transform: translateY(-50px) rotateY(360deg);
-    filter: drop-shadow(10px 10px 10px hsl(132, 88%, 50%));
+    transform: translateY(-80px) rotateY(360deg);
   }
-  li:hover h3,
-  li:focus h3 {
-    background-color: hsl(132, 88%, 50%);
+}
+@media only screen and (min-width: 1513px) {
+  .grid-floats .grid-item {
+    min-height: 750px;
   }
-  .grid-item:hover,
-  :focus {
-    border: 3px solid hsl(132, 88%, 50%);
+  .grid-flex .grid-item {
+    min-height: 750px;
+  }
+  .grid-floats .grid-item:nth-child(2),
+  .grid-floats .grid-item:nth-child(3) {
+    min-height: 750px;
+  }
+  section .grid-item:first-child {
+    height: 750px;
+  }
+  li:hover p,
+  li:focus p {
+    padding-top: 500px;
   }
 }
