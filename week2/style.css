@@ -39,8 +39,8 @@ p {
   padding: 10px;
 }
 
-.grid-floats .grid-item,
-.grid-flex .grid-item {
+.grid-floats li,
+.grid-flex li {
   width: 100%;
   border: 3px hsl(22, 94%, 48%) solid;
   box-shadow: 0 0 2rem black;
@@ -60,7 +60,7 @@ li:hover {
   cursor: pointer;
 }
 
-li:hover p{
+li:hover p {
   margin-top: 0;
   z-index: 11;
 }
@@ -104,7 +104,7 @@ section .grid-item:nth-child(2) p {
     margin-top: 50px;
   }
 
-  .grid-flex .grid-item {
+  .grid-flex li {
     width: 31%;
     min-height: 400px;
   }
@@ -140,7 +140,7 @@ section .grid-item:nth-child(2) p {
   section li:nth-child(3) img {
     margin-bottom: 120px;
   }
- 
+
   .grid-floats li:nth-child(4) {
     clear: both;
   }
@@ -170,8 +170,7 @@ section .grid-item:nth-child(2) p {
   section .grid-item:first-child {
     height: 750px;
   }
-  li:hover p,
-  li:focus p {
+  li:hover p {
     padding-top: 500px;
   }
 }
