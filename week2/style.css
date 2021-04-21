@@ -39,8 +39,8 @@ p {
   padding: 10px;
 }
 
-.grid-floats li,
-.grid-flex li {
+.grid-floats .grid-item,
+.grid-flex .grid-item {
   width: 100%;
   border: 3px hsl(22, 94%, 48%) solid;
   box-shadow: 0 0 2rem black;
@@ -52,8 +52,7 @@ p {
   position: relative;
   min-height: 450px;
 }
-li:hover,
-li:focus {
+li:hover {
   transform: scale(1.1);
   box-shadow: 0 0 2rem hsl(132, 88%, 50%);
   border: 3px solid hsl(132, 88%, 50%);
@@ -61,13 +60,11 @@ li:focus {
   cursor: pointer;
 }
 
-li:hover p,
-li:focus p {
+li:hover p{
   margin-top: 0;
   z-index: 11;
 }
-li:hover img,
-li:focus img {
+li:hover img {
   position: absolute;
   z-index: 10;
   transform: translateY(50px) rotateY(360deg);
@@ -107,22 +104,20 @@ section .grid-item:nth-child(2) p {
     margin-top: 50px;
   }
 
-  .grid-flex li {
+  .grid-flex .grid-item {
     width: 31%;
     min-height: 400px;
   }
 
-  li:hover p,
-  li:focus p {
+  li:hover p {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: rgb(235, 243, 237);
   }
-  li:hover img,
-  li:focus img {
+  li:hover img {
     transform: translateY(80px) rotateY(360deg);
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   .grid-floats .grid-item {
     width: 23.6%;
     min-height: 540px;
@@ -145,10 +140,7 @@ section .grid-item:nth-child(2) p {
   section li:nth-child(3) img {
     margin-bottom: 120px;
   }
-  .grid-floats .grid-item:nth-child(2),
-  .grid-floats .grid-item:nth-child(3) {
-    min-height: 540px;
-  }
+ 
   .grid-floats li:nth-child(4) {
     clear: both;
   }
@@ -157,12 +149,10 @@ section .grid-item:nth-child(2) p {
     min-height: 540px;
   }
 
-  li:hover p,
-  li:focus p {
+  li:hover p {
     padding-top: 270px;
   }
-  li:hover img,
-  li:focus img {
+  li:hover img {
     transform: translateY(-80px) rotateY(360deg);
   }
 }
